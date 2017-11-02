@@ -37,7 +37,11 @@
     100% { width: 101% }
 }
 #welcome {
-    @extend .fullscreen;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
     background: $indexBaseColor;
     z-index: 1;   
 }
