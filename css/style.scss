@@ -1,0 +1,37 @@
+/* variables and mixins */
+
+/* index base colour */
+$indexBaseColor: #006e80; 
+
+/* set a colour darker than base */
+$darkerBaseColor: #015563;
+
+/* light gray */
+$lightGray: #c8cccf;
+
+/* home base color */
+$homeBaseColor: #ffad00;
+
+/* element transitions */
+$trans: all ease .3s;
+
+/* form fonts */
+.formFonts {
+   font-size: 1.8rem;
+   color: $darkerBaseColor;
+   font-weight: normal;
+}
+
+/* set element to full screen */
+.fullscreen {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+@import 'normalize';
+@import 'index';
+@import 'home';

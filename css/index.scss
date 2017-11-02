@@ -1,0 +1,88 @@
+/* index*/
+@font-face {
+    font-family: arcade;
+    src: url(../fonts/ARCADECLASSIC.TTF);
+}
+
+#loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -143px;
+}
+#loading > h1 {
+    font-family: arcade;
+    font-size: 4rem;
+    color: #006e80;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+}
+#loadingProgress {
+    border: 4px solid $indexBaseColor;
+    height: 40px; 
+    position: relative;
+}
+#progressBar {
+    background: $indexBaseColor;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    height: 100%;
+    animation: progress 6.0s forwards;
+    -webkit-animation: progress 6.0s forwards;
+}
+@keyframes progress {
+    0% { width: 0% }
+    100% { width: 101% }
+}
+#welcome {
+    @extend .fullscreen;
+    background: $indexBaseColor;
+    z-index: 1;   
+}
+.homeLogo {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin-left: -220px;
+    margin-top: -60px;
+}
+.shadowButton {
+    border: 1px solid #fff;
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    padding: 7px 14px;
+    left: 50%;
+    position: relative;
+    margin-left: -80px;
+    opacity: 0;
+    cursor: pointer;
+}
+.shadowButton a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+    z-index: 99;
+    cursor: pointer;    
+}
+.shadowButton::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    transition: all linear .6s;
+    opacity: 0.5;
+}
+
+.shadowButton:hover:before {
+    width: 100%;
+}

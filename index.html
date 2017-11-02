@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">        
+    </head>
+    <body>
+        <div id="welcome">
+            <canvas id="canvas" style="width: 100%; height: 100%;"></canvas>
+            <div class="homeLogo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="440" height="100">
+                    <text x="0" y="60" style="font-family: Oswald,sans-serif;
+                                               font-size: 75px;
+                                               fill: #fff;
+                                               font-weight: 300;
+                                               letter-spacing: 2px;">
+                    DAVENORM.ME
+                    </text>
+                    <text x="70" y="95" style="font-family: Oswald,sans-serif;
+                                               font-size: 30px;
+                                               fill: #fff;
+                                               font-weight: 300;
+                                               letter-spacing: 5px;">
+                    &lt;WEB DEVELOPER /&gt;                             
+                    </text>                           
+                </svg>
+                <button class="shadowButton">
+                    <a href="/home.html" title="View Portfolio">VIEW PORTFOLIO</a>
+                </button>  
+            </div>     
+        </div>
+        <div id="loading">
+            <h1>LOADING ...</h1>
+            <div id="loadingProgress">
+                <span id="progressBar"></span>
+            </div>
+        </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>        
+<script>
+(function() {
+   $(document).ready(function() {
+        setTimeout(function() { 
+            $("#welcome").animate({
+                left: "0"
+            }, 1500 );
+         }, 6000);
+
+         setTimeout(function() { 
+             $(".homeLogo").animate({
+                 top: "50%"
+             }, 2500 );
+          }, 7000);     
+
+          setTimeout(function() { 
+              $(".shadowButton").animate({
+                  opacity: "1"
+              }, 1000 );
+          }, 9500);
+    });
+    
+    var canvas = document.querySelector("#canvas");
+    var context = canvas.getContext("2d");
+    
+    canvas.width = $(window).width();
+    canvas.height = $(window).height();
+    
+    var height = $(window).height();
+    var pointA = canvas.width  /2;
+    var pointB = height / 2;
+    console.log(height + ' ' + pointA + ' ' + pointB)
+    
+    // the triangle
+    context.beginPath();
+    context.moveTo(pointA, canvas.height);
+    context.lineTo(pointA, pointB);
+    context.lineTo(canvas.width , 0);
+    context.closePath();
+ 
+    // the fill color
+    context.fillStyle = "#FFCC00";
+    context.fill();
+    
+    // the triangle
+    context.beginPath();
+    context.moveTo(0, 0);
+    context.lineTo(pointA, pointB);
+    context.lineTo(pointA , canvas.height);
+    context.closePath();
+    
+    // the fill color
+    context.fillStyle = "#ea1d1d";
+    context.fill();    
+})();
+</script>
+    </body>
+</html>

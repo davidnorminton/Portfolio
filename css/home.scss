@@ -1,0 +1,167 @@
+
+/* home page */
+html, body{
+    height: 100%;
+    font-family:  Oswald,sans-serif;
+}
+
+/* logo */
+.logoText {
+    font-family: arcade;
+    font-size: 8rem;
+    fill: $indexBaseColor;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+.logoSvg {
+    fill: $homeBaseColor;
+}
+.sidebar {
+    background: $indexBaseColor;
+    height: 100%;
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 300px;
+    text-align: center;
+}
+.main {
+   margin-left: 300px;
+}
+.logo {
+    margin-top: 20px;
+}
+.quickAbout {
+    display: block;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.name {
+    font-size: 2.7rem;
+    color: $homeBaseColor;
+    margin: 3px;
+    font-weight: bold;
+}
+nav ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+nav {
+    ul li {
+        margin: 8px 50px;
+        padding: 10px 0;
+        background: $darkerBaseColor;
+        border-radius: 5px;
+        transition: $trans;    
+    }
+    ul li:hover {
+        box-shadow: 0px 0px 8px 0px #9da5a7;
+    }
+    ul li a {
+        color: $homeBaseColor;
+        font-size: 2rem;
+        font-weight: bold;
+        transition: $trans;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        display: block; 
+    }
+    ul li a:hover {
+        color: #fff;
+        text-decoration: none;    
+    }
+}    
+.social-menu {
+    list-style: none;
+    text-align: center;
+   
+    li {
+        display: inline-block;
+        background: $homeBaseColor;
+        border-radius: 50%;
+        padding: 8px 0;
+        margin-right: 10px;
+    }
+    li a {
+        color: #fff;
+        font-size: 20px;
+        margin: 0px 16px;
+    }
+}    
+.jsFiddle {
+    padding: 10px 0 !important;
+}
+.jsFiddle a {
+    font-size: 18px !important;
+}
+p {
+    font-size: 2.5rem;
+    color: #675e5e;
+}
+h2 {
+    font-size: 4rem;
+    color: $darkerBaseColor;
+    text-align: center;
+}
+.sectionSummary {
+    color: $lightGray;
+    font-size: 2rem;
+    text-align: center;
+}
+footer {
+    background: $darkerBaseColor;
+    padding: 15px 0 5px 0;
+    margin-top: 50px;
+}
+section {
+    margin-top: 100px;
+    overflow: hidden;
+}
+.skillBar {
+    background: $lightGray;
+    margin-bottom: 12px;
+    position: relative;
+}
+.skillLevel {
+    background: $darkerBaseColor;
+}
+.skillTag {
+    background: $indexBaseColor;
+    font-size: 2rem;
+    color: white;
+    padding: 5px;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+.level {
+    position: absolute;
+    right: 15px;
+    font-size: 2rem;
+    top: 5px;
+}
+.projectWrap {
+    width: 98%;
+    float: left;
+    position: relative;
+    border: 1px solid #333;
+    margin-top: 20px;
+}
+.projectWrap img {
+    width: 100%;
+}
+.odd {
+    margin-right: 2%;
+}
+.even {
+    margin-left: 2%;
+}
+label, .form-control {
+    @extend .formFonts;
+}
+.btnSubmit {
+    font-size: 1.8rem;
+    background: $darkerBaseColor;
+}
