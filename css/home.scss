@@ -30,8 +30,21 @@ section {
 .main {
    margin-left: 300px;
 }
-
+@media only screen and (max-width: 780px) {
+   .main {
+       margin-left: 0px;
+   }
+}
 /* logo */
+.homeSvgLogo {
+    width: 170px;
+    height: auto;
+}
+@media only screen and (max-width: 780px) {
+    .homeSvgLogo {
+        width: 80px;
+    }
+}
 .logoText {
     font-family: $specialFont;
     font-size: 8rem;
@@ -55,6 +68,7 @@ section {
     width: 300px;
     text-align: center;
 }
+
 .quickAbout {
     display: block;
     color: #fff;
@@ -65,6 +79,21 @@ section {
     color: $homeBaseColor;
     margin: 3px;
     font-weight: bold;
+}
+@media only screen and (max-width: 780px) {
+    .logo {
+        margin-top: 5px;
+        display: inline-block;
+    }
+    .sidebar {
+        height: 85px;
+        width: 100%;
+        text-align: left;
+        z-index: 99;
+    }
+    .name, .quickAbout {
+        display: none;
+    }
 }
 /* navigation */
 nav ul {
@@ -98,6 +127,23 @@ nav {
         text-decoration: none;    
     }
 } 
+@media only screen and (max-width: 780px) {
+    nav {
+        float: right;
+        margin-right: 5px;
+        
+        ul li {
+            float: left;
+            margin: 2px 1px;
+            padding: 10px;
+            background: #015563;
+            
+            a {
+                font-size: 1.7rem;
+            }  
+        }
+    }
+}
 /* social links */   
 .social-menu {
     list-style: none;

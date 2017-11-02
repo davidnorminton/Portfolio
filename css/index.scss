@@ -3,6 +3,11 @@
     font-family: arcade;
     src: url(../fonts/ARCADECLASSIC.TTF);
 }
+/* canvas */
+#canvas {
+    width: 100%;
+    height: 100%;
+}
 /* index logo */
 .indexSvgTextName{
     font-family: $mainFont;
