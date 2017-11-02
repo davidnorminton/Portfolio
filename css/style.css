@@ -394,6 +394,8 @@ template {
 /* variables and mixins */
 /* index base colour */
 /* set a colour darker than base */
+/* main font family */
+/* special font */
 /* light gray */
 /* home base color */
 /* element transitions */
@@ -408,6 +410,22 @@ template {
   font-family: arcade;
   src: url(../fonts/ARCADECLASSIC.TTF); }
 
+/* index logo */
+.indexSvgTextName {
+  font-family: Oswald, sans-serif;
+  font-size: 4.86rem;
+  fill: #fff;
+  font-weight: 300;
+  letter-spacing: 2px; }
+
+.indexSvgTextAbout {
+  font-family: Oswald, sans-serif;
+  font-size: 2rem;
+  fill: #fff;
+  font-weight: 300;
+  letter-spacing: 5px; }
+
+/* loading progress bar */
 #loading {
   position: absolute;
   left: 50%;
@@ -442,6 +460,7 @@ template {
   100% {
     width: 101%; } }
 
+/* welcome page */
 #welcome {
   position: absolute;
   left: 100%;
@@ -458,6 +477,7 @@ template {
   margin-left: -220px;
   margin-top: -60px; }
 
+/* button link to home page */
 .shadowButton {
   border: 1px solid #fff;
   display: block;
@@ -495,10 +515,36 @@ template {
 .shadowButton:hover:before {
   width: 100%; }
 
-/* home page */
+/* home page basics*/
 html, body {
   height: 100%;
-  font-family: Oswald,sans-serif; }
+  font-family: Oswald, sans-serif; }
+
+p {
+  font-size: 2.5rem;
+  color: #675e5e; }
+
+h2 {
+  font-size: 4rem;
+  color: #015563;
+  text-align: center; }
+
+.sectionSummary {
+  color: #c8cccf;
+  font-size: 2rem;
+  text-align: center; }
+
+footer {
+  background: #015563;
+  padding: 15px 0 5px 0;
+  margin-top: 50px; }
+
+section {
+  margin-top: 100px;
+  overflow: hidden; }
+
+.main {
+  margin-left: 300px; }
 
 /* logo */
 .logoText {
@@ -508,9 +554,13 @@ html, body {
   font-weight: 300;
   letter-spacing: 5px; }
 
+.logo {
+  margin-top: 20px; }
+
 .logoSvg {
   fill: #ffad00; }
 
+/* sidebar */
 .sidebar {
   background: #006e80;
   height: 100%;
@@ -519,12 +569,6 @@ html, body {
   top: 0;
   width: 300px;
   text-align: center; }
-
-.main {
-  margin-left: 300px; }
-
-.logo {
-  margin-top: 20px; }
 
 .quickAbout {
   display: block;
@@ -537,6 +581,7 @@ html, body {
   margin: 3px;
   font-weight: bold; }
 
+/* navigation */
 nav ul {
   margin: 20px 0;
   padding: 0;
@@ -566,6 +611,7 @@ nav ul li a:hover {
   color: #fff;
   text-decoration: none; }
 
+/* social links */
 .social-menu {
   list-style: none;
   text-align: center; }
@@ -580,35 +626,14 @@ nav ul li a:hover {
     font-size: 20px;
     margin: 0px 16px; }
 
+/* adjust icon sizes for balance */
 .jsFiddle {
   padding: 10px 0 !important; }
 
 .jsFiddle a {
   font-size: 18px !important; }
 
-p {
-  font-size: 2.5rem;
-  color: #675e5e; }
-
-h2 {
-  font-size: 4rem;
-  color: #015563;
-  text-align: center; }
-
-.sectionSummary {
-  color: #c8cccf;
-  font-size: 2rem;
-  text-align: center; }
-
-footer {
-  background: #015563;
-  padding: 15px 0 5px 0;
-  margin-top: 50px; }
-
-section {
-  margin-top: 100px;
-  overflow: hidden; }
-
+/* skills section */
 .skillBar {
   background: #c8cccf;
   margin-bottom: 12px;
@@ -632,6 +657,7 @@ section {
   font-size: 2rem;
   top: 5px; }
 
+/* projects section */
 .projectWrap {
   width: 98%;
   float: left;
@@ -648,6 +674,7 @@ section {
 .even {
   margin-left: 2%; }
 
+/* contact form */
 .btnSubmit {
   font-size: 1.8rem;
   background: #015563; }

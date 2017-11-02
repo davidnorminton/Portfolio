@@ -1,21 +1,51 @@
 
-/* home page */
+/* home page basics*/
 html, body{
     height: 100%;
-    font-family:  Oswald,sans-serif;
+    font-family:  $mainFont;
+}
+p {
+    font-size: 2.5rem;
+    color: #675e5e;
+}
+h2 {
+    font-size: 4rem;
+    color: $darkerBaseColor;
+    text-align: center;
+}
+.sectionSummary {
+    color: $lightGray;
+    font-size: 2rem;
+    text-align: center;
+}
+footer {
+    background: $darkerBaseColor;
+    padding: 15px 0 5px 0;
+    margin-top: 50px;
+}
+section {
+    margin-top: 100px;
+    overflow: hidden;
+}
+.main {
+   margin-left: 300px;
 }
 
 /* logo */
 .logoText {
-    font-family: arcade;
+    font-family: $specialFont;
     font-size: 8rem;
     fill: $indexBaseColor;
     font-weight: 300;
     letter-spacing: 5px;
 }
+.logo {
+    margin-top: 20px;
+}
 .logoSvg {
     fill: $homeBaseColor;
 }
+/* sidebar */
 .sidebar {
     background: $indexBaseColor;
     height: 100%;
@@ -24,12 +54,6 @@ html, body{
     top: 0;
     width: 300px;
     text-align: center;
-}
-.main {
-   margin-left: 300px;
-}
-.logo {
-    margin-top: 20px;
 }
 .quickAbout {
     display: block;
@@ -42,6 +66,7 @@ html, body{
     margin: 3px;
     font-weight: bold;
 }
+/* navigation */
 nav ul {
     margin: 20px 0;
     padding: 0;
@@ -72,7 +97,8 @@ nav {
         color: #fff;
         text-decoration: none;    
     }
-}    
+} 
+/* social links */   
 .social-menu {
     list-style: none;
     text-align: center;
@@ -89,36 +115,16 @@ nav {
         font-size: 20px;
         margin: 0px 16px;
     }
-}    
+}   
+/* adjust icon sizes for balance */ 
 .jsFiddle {
     padding: 10px 0 !important;
 }
 .jsFiddle a {
     font-size: 18px !important;
 }
-p {
-    font-size: 2.5rem;
-    color: #675e5e;
-}
-h2 {
-    font-size: 4rem;
-    color: $darkerBaseColor;
-    text-align: center;
-}
-.sectionSummary {
-    color: $lightGray;
-    font-size: 2rem;
-    text-align: center;
-}
-footer {
-    background: $darkerBaseColor;
-    padding: 15px 0 5px 0;
-    margin-top: 50px;
-}
-section {
-    margin-top: 100px;
-    overflow: hidden;
-}
+
+/* skills section */
 .skillBar {
     background: $lightGray;
     margin-bottom: 12px;
@@ -142,6 +148,7 @@ section {
     font-size: 2rem;
     top: 5px;
 }
+/* projects section */
 .projectWrap {
     width: 98%;
     float: left;
@@ -158,6 +165,7 @@ section {
 .even {
     margin-left: 2%;
 }
+/* contact form */
 label, .form-control {
     @extend .formFonts;
 }
