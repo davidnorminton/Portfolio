@@ -13,15 +13,13 @@ h2 {
     color: $darkerBaseColor;
     text-align: center;
 }
+h2, h3 {
+    margin-top: 0;
+}
 .sectionSummary {
     color: $lightGray;
     font-size: 2rem;
     text-align: center;
-}
-footer {
-    background: $darkerBaseColor;
-    padding: 15px 0 5px 0;
-    margin-top: 50px;
 }
 section {
     margin-top: 100px;
@@ -40,9 +38,14 @@ section {
     width: 170px;
     height: auto;
 }
-@media only screen and (max-width: 780px) {
+@media only screen and (min-width: 451px) and (max-width: 780px) {
     .homeSvgLogo {
         width: 80px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .homeSvgLogo {
+        width: 65px;
     }
 }
 .logoText {
@@ -57,6 +60,8 @@ section {
 }
 .logoSvg {
     fill: $homeBaseColor;
+    stroke: #015563;
+    stroke-width: 6px;    
 }
 /* sidebar */
 .sidebar {
@@ -88,8 +93,8 @@ section {
     .sidebar {
         height: 85px;
         width: 100%;
-        text-align: left;
         z-index: 99;
+        box-shadow: 0px 5px 10px 0px grey;
     }
     .name, .quickAbout {
         display: none;
@@ -103,17 +108,16 @@ nav ul {
 }
 nav {
     ul li {
-        margin: 8px 50px;
+        margin: 0px 50px;
         padding: 10px 0;
-        background: $darkerBaseColor;
-        border-radius: 5px;
         transition: $trans;    
+        width: 65%;
     }
     ul li:hover {
         box-shadow: 0px 0px 8px 0px #9da5a7;
     }
     ul li a {
-        color: $homeBaseColor;
+        color: #052d33;
         font-size: 2rem;
         font-weight: bold;
         transition: $trans;
@@ -127,42 +131,86 @@ nav {
         text-decoration: none;    
     }
 } 
+.hide-tablet {
+    display: inline-block;
+}
+.hide-desktop {
+    display: none;
+}
+
 @media only screen and (max-width: 780px) {
-    nav {
-        float: right;
-        margin-right: 5px;
-        
-        ul li {
-            float: left;
-            margin: 2px 1px;
-            padding: 10px;
-            background: #015563;
-            
-            a {
-                font-size: 1.7rem;
-            }  
-        }
+    .hide-tablet {
+        display: none;
+    }
+    .hide-desktop{
+        display: inline-block;
+    }
+    .bars {
+        display: inline-block;
+        position: fixed;
+        width: 40px;
+        top: 28px;
+        left: 28px;
+        color: #ffad00;
+        font-size: 36px;
+        padding: 0;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .sidebar {
+        height: 70px;
     }
 }
 /* social links */   
 .social-menu {
     list-style: none;
     text-align: center;
+    padding-left: 13px;
    
     li {
         display: inline-block;
-        background: $homeBaseColor;
-        border-radius: 50%;
+        background: $indexBaseColor;
         padding: 8px 0;
         margin-right: 10px;
+        cursor: pointer;
+    }
+    li:hover {
+        background: #0ca9ad;
     }
     li a {
         color: #fff;
         font-size: 20px;
         margin: 0px 16px;
     }
-}   
-/* adjust icon sizes for balance */ 
+}
+/* footer */
+/* adjust icon sizes for balance */
+footer {
+    background: $darkerBaseColor;
+    padding: 15px 0 20px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+.backToTop {
+    display: inline-block;
+    background: $homeBaseColor;
+    position: relative;
+    bottom: 39px;
+    font-size: 30px;
+    padding: 4px 21px;
+    cursor: pointer;
+    transition: $trans;
+}
+.backToTop:hover {
+    background: #ff6300;
+}
+.copyright {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 25px;
+    display: block;
+} 
 .jsFiddle {
     padding: 10px 0 !important;
 }
@@ -199,17 +247,21 @@ nav {
     width: 98%;
     float: left;
     position: relative;
-    border: 1px solid #333;
-    margin-top: 20px;
+    border-top: 1px solid #c8cdd3;
+    padding-top: 40px;
+    margin-top: 40px;
 }
 .projectWrap img {
     width: 100%;
 }
-.odd {
-    margin-right: 2%;
+.projectAbout {
+    float: left;
+    width: 50%;
 }
-.even {
-    margin-left: 2%;
+.projectImage {
+    float: right;
+    width: 50%;
+    padding-left: 20px;
 }
 /* contact form */
 label, .form-control {

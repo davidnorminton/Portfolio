@@ -3,6 +3,9 @@
     font-family: arcade;
     src: url(../fonts/ARCADECLASSIC.TTF);
 }
+a {
+   cursor: pointer;
+}
 /* canvas */
 #canvas {
     width: 100%;
