@@ -627,7 +627,6 @@ nav ul {
 
 nav ul li {
   margin: 0px 50px;
-  padding: 10px 0;
   transition: all ease 0.3s;
   width: 65%;
   box-shadow: 0 4px 5px -2px #747c7d;
@@ -637,6 +636,7 @@ nav ul li:hover {
   width: 30%; }
 
 nav ul li a {
+  padding: 10px 0;
   color: #ffad00;
   font-size: 2rem;
   font-weight: bold;
