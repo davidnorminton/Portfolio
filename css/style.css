@@ -676,7 +676,9 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 450px) {
   .sidebar {
-    height: 70px; } }
+    height: 70px; }
+  .bars {
+    top: 18px; } }
 
 /* footer */
 /* adjust icon sizes for balance */
