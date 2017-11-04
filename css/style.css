@@ -804,7 +804,9 @@ footer {
   padding: 5px 10px;
   border: 0;
   position: relative;
-  left: 5px; }
+  left: 5px;
+  clear: both;
+  display: block; }
   .view-project a {
     color: #fff;
     font-weight: bold;

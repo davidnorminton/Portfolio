@@ -307,11 +307,13 @@ footer {
 }
 .view-project {
     margin-top: 30px;
-    background: $homeBaseColor;
+    background: #ffad00;
     padding: 5px 10px;
     border: 0;
     position: relative;
-    left: 5px;    
+    left: 5px;
+    clear: both;
+    display: block;   
 
    a {
        color: #fff;
