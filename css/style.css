@@ -629,13 +629,15 @@ nav ul li {
   margin: 0px 50px;
   padding: 10px 0;
   transition: all ease 0.3s;
-  width: 65%; }
+  width: 65%;
+  box-shadow: 0 4px 5px -2px #747c7d;
+  border-bottom: 2px solid #055c6b; }
 
 nav ul li:hover {
-  box-shadow: 0px 0px 8px 0px #9da5a7; }
+  width: 30%; }
 
 nav ul li a {
-  color: #052d33;
+  color: #ffad00;
   font-size: 2rem;
   font-weight: bold;
   transition: all ease 0.3s;
@@ -646,6 +648,8 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #fff;
+  position: relative;
+  bottom: 5px;
   text-decoration: none; }
 
 .hide-tablet {
@@ -791,7 +795,8 @@ footer {
   float: left;
   width: 50%; }
   .projectAbout p {
-    font-size: 2rem; }
+    font-size: 2rem;
+    margin: 30px 0; }
 
 .projectImage {
   float: right;

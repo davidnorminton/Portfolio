@@ -114,12 +114,14 @@ nav {
         padding: 10px 0;
         transition: $trans;    
         width: 65%;
+        box-shadow: 0 4px 5px -2px #747c7d;
+        border-bottom: 2px solid #055c6b;
     }
     ul li:hover {
-        box-shadow: 0px 0px 8px 0px #9da5a7;
+        width: 30%;
     }
     ul li a {
-        color: #052d33;
+        color: $homeBaseColor;
         font-size: 2rem;
         font-weight: bold;
         transition: $trans;
@@ -130,6 +132,8 @@ nav {
     }
     ul li a:hover {
         color: #fff;
+        position: relative;
+        bottom: 5px;
         text-decoration: none;    
     }
 } 
@@ -298,6 +302,7 @@ footer {
     
     p {
         font-size: 2rem;
+        margin: 30px 0;
     }
 }
 .projectImage {
