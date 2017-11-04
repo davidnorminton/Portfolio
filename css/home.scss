@@ -15,6 +15,7 @@ h2 {
 }
 h2, h3 {
     margin-top: 0;
+    font-size: 3rem;
 }
 .sectionSummary {
     color: $lightGray;
@@ -162,28 +163,7 @@ nav {
         height: 70px;
     }
 }
-/* social links */   
-.social-menu {
-    list-style: none;
-    text-align: center;
-    padding-left: 13px;
-   
-    li {
-        display: inline-block;
-        background: $indexBaseColor;
-        padding: 8px 0;
-        margin-right: 10px;
-        cursor: pointer;
-    }
-    li:hover {
-        background: #0ca9ad;
-    }
-    li a {
-        color: #fff;
-        font-size: 20px;
-        margin: 0px 16px;
-    }
-}
+
 /* footer */
 /* adjust icon sizes for balance */
 footer {
@@ -227,7 +207,47 @@ footer {
     font-size: 2rem;
     margin-top: 25px;
     display: block;
-} 
+}
+/* social links */   
+.social-menu {
+    list-style: none;
+    text-align: center;
+    padding-left: 13px;
+   
+    li {
+        display: inline-block;
+        background: $indexBaseColor;
+        padding: 8px 0;
+        margin-right: 10px;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all ease 2s;
+    }
+    li:hover {
+        background: #0ca9ad;
+    }
+    li a {
+        color: #fff;
+        font-size: 20px;
+        margin: 0px 16px;
+    }
+}
+.social-link {}
+.social-menu  li:hover > a > .social-link {
+    -webkit-animation: 1s linear forwards iconflip;
+            animation: 1s linear forwards iconflip; 
+}
+@keyframes iconflip {
+    0% {
+        transform: translateX(-60px);
+    }
+    40% {
+        transform: translateX(0);
+    }
+    100% {
+        color: $darkerBaseColor;
+    }
+}
 .jsFiddle {
     padding: 10px 0 !important;
 }
@@ -279,6 +299,17 @@ footer {
     float: right;
     width: 50%;
     padding-left: 20px;
+}
+.tech {
+    font-size: 2.1rem;
+}
+.usedTech {
+    font-size: 2rem;
+    background: $indexBaseColor;
+    margin: 5px 5px 0 0;
+    color: #fff;
+    padding: 5px 9px;
+    display: inline-block;
 }
 .browser {
     border: 1px solid $lightGray;

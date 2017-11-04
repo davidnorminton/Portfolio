@@ -538,7 +538,8 @@ h2 {
   text-align: center; }
 
 h2, h3 {
-  margin-top: 0; }
+  margin-top: 0;
+  font-size: 3rem; }
 
 .sectionSummary {
   color: #c8cccf;
@@ -672,24 +673,6 @@ nav ul li a:hover {
   .sidebar {
     height: 70px; } }
 
-/* social links */
-.social-menu {
-  list-style: none;
-  text-align: center;
-  padding-left: 13px; }
-  .social-menu li {
-    display: inline-block;
-    background: #006e80;
-    padding: 8px 0;
-    margin-right: 10px;
-    cursor: pointer; }
-  .social-menu li:hover {
-    background: #0ca9ad; }
-  .social-menu li a {
-    color: #fff;
-    font-size: 20px;
-    margin: 0px 16px; }
-
 /* footer */
 /* adjust icon sizes for balance */
 footer {
@@ -728,6 +711,38 @@ footer {
   font-size: 2rem;
   margin-top: 25px;
   display: block; }
+
+/* social links */
+.social-menu {
+  list-style: none;
+  text-align: center;
+  padding-left: 13px; }
+  .social-menu li {
+    display: inline-block;
+    background: #006e80;
+    padding: 8px 0;
+    margin-right: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all ease 2s; }
+  .social-menu li:hover {
+    background: #0ca9ad; }
+  .social-menu li a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0px 16px; }
+
+.social-menu li:hover > a > .social-link {
+  -webkit-animation: 1s linear forwards iconflip;
+  animation: 1s linear forwards iconflip; }
+
+@keyframes iconflip {
+  0% {
+    transform: translateX(-60px); }
+  40% {
+    transform: translateX(0); }
+  100% {
+    color: #015563; } }
 
 .jsFiddle {
   padding: 10px 0 !important; }
@@ -779,6 +794,17 @@ footer {
   float: right;
   width: 50%;
   padding-left: 20px; }
+
+.tech {
+  font-size: 2.1rem; }
+
+.usedTech {
+  font-size: 2rem;
+  background: #006e80;
+  margin: 5px 5px 0 0;
+  color: #fff;
+  padding: 5px 9px;
+  display: inline-block; }
 
 .browser {
   border: 1px solid #c8cccf;
