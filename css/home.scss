@@ -8,12 +8,13 @@ p {
     font-size: 2.5rem;
     color: #675e5e;
 }
-h2 {
+h2, h4{
     font-size: 4rem;
     color: $darkerBaseColor;
     text-align: center;
+    margin-top: 0;
 }
-h2, h3 {
+h3 {
     margin-top: 0;
     font-size: 3rem;
 }
@@ -294,6 +295,10 @@ footer {
 .projectAbout {
     float: left;
     width: 50%;
+    
+    p {
+        font-size: 2rem;
+    }
 }
 .projectImage {
     float: right;
@@ -310,6 +315,7 @@ footer {
     color: #fff;
     padding: 5px 9px;
     display: inline-block;
+    text-transform: lowercase;
 }
 .browser {
     border: 1px solid $lightGray;
