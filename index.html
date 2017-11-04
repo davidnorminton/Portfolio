@@ -99,25 +99,25 @@
     var pointB = height / 2;
     console.log(height + ' ' + pointA + ' ' + pointB)
     
-    // the triangle
+    // right triangle
     context.beginPath();
     context.moveTo(pointA, canvas.height);
     context.lineTo(pointA, pointB);
     context.lineTo(canvas.width , 0);
     context.closePath();
  
-    // the fill color
+    // right triangle fill color
     context.fillStyle = "#FFCC00";
     context.fill();
     
-    // the triangle
+    // left triangle
     context.beginPath();
     context.moveTo(0, 0);
     context.lineTo(pointA, pointB);
     context.lineTo(pointA , canvas.height);
     context.closePath();
     
-    // the fill color
+    // left triangle fill color
     context.fillStyle = "#ea1d1d";
     context.fill();    
 })();
