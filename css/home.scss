@@ -18,6 +18,48 @@ h3 {
     margin-top: 0;
     font-size: 3rem;
 }
+.github {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: black;
+    color: #fff;
+    font-size: 40px;
+    padding: 3px 14px 0 0;
+    cursor: pointer;
+}
+.github > i {
+    z-index: 6;
+    position: relative;
+}
+.github::before,
+.github::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.github::before {
+    border-width: 1.5em;
+    border-right-color: #000;
+    border-top-color: #000;
+}
+
+.github::after {
+    border-radius: 0.4em;
+    border-width: 1.35em;
+    border-right-color: #000;
+    border-top-color: #000;
+    z-index: 1;
+}
+@media only screen and (max-width: 780px) {
+    .github {
+        display: none;
+    }
+}
 .sectionSummary {
     color: $lightGray;
     font-size: 2rem;

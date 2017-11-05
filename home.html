@@ -43,6 +43,9 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">        
     </head>
     <body>
+        <div id="git" class="github">
+            <i class="fa fa-github"></i>
+        </div>
         <div class="sidebar">
             <div class="logo">
                 <svg version="1.1" viewBox="0 0 170 170" class="homeSvgLogo">
@@ -68,7 +71,8 @@
             </nav>            
         </div>
         <div class="container-fluid main">
-            <div class="row">                 
+            <div class="row">
+                <div id="loadedData"></div>        
                 <article class="col-md-offset-2 col-md-8">
                     <section id="about">
                         <h2>Hi I'm David Norminton</h2>
@@ -382,6 +386,34 @@
     
     });
 })(jQuery);
+let git = document.querySelector('#git');
+
+git.addEventListener('click', fetchGitList);
+
+function fetchGitList() {
+    fetch('gitList.html', {cache: "no-cache"}).then(function(response) {
+        return response.text();
+    }).then(function(response) {
+
+        let insert = document.querySelector('#loadedData');
+        insert.innerHTML = response;
+        
+        document.querySelector("body").style = 'overflow: hidden';
+        
+        if (document.getElementById("close")) {
+
+            let close = document.getElementById("close");
+            let insert = document.getElementById("loadedData");
+
+            close.addEventListener('click', function() {
+                insert.innerHTML = "";
+                document.querySelector("body").style = 'overflow: scroll-y';                
+            });
+
+        }     
+});
+}
+
 
 </script>        
     </body>
