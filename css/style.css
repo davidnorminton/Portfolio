@@ -476,7 +476,8 @@ a {
   height: 100%;
   width: 100%;
   background: #006e80;
-  z-index: 1; }
+  z-index: 1;
+  overflow: hidden; }
 
 .homeLogo {
   position: absolute;
