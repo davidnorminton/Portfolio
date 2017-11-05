@@ -418,21 +418,6 @@ a {
   width: 100%;
   height: 100%; }
 
-/* index logo */
-.indexSvgTextName {
-  font-family: Oswald, sans-serif;
-  font-size: 7.6rem;
-  fill: #fff;
-  font-weight: 300;
-  letter-spacing: 2px; }
-
-.indexSvgTextAbout {
-  font-family: Oswald, sans-serif;
-  font-size: 3rem;
-  fill: #fff;
-  font-weight: 300;
-  letter-spacing: 5px; }
-
 /* loading progress bar */
 #loading {
   position: absolute;
@@ -484,7 +469,32 @@ a {
   top: -50%;
   left: 50%;
   margin-left: -220px;
-  margin-top: -60px; }
+  margin-top: -135px;
+  /* index logo */ }
+  .homeLogo h1 {
+    font-family: Oswald, sans-serif;
+    font-size: 7.6rem;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 10px; }
+  .homeLogo h2 {
+    font-family: Oswald, sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 5px; }
+
+@media only screen and (max-width: 500px) {
+  .homeLogo {
+    margin-left: -115px;
+    margin-top: -75px; }
+    .homeLogo h1 {
+      font-size: 4rem; }
+    .homeLogo h2 {
+      font-size: 2rem; }
+  #loading {
+    margin-left: -105px; } }
 
 /* button link to home page */
 .shadowButton {
