@@ -421,14 +421,14 @@ a {
 /* index logo */
 .indexSvgTextName {
   font-family: Oswald, sans-serif;
-  font-size: 4.86rem;
+  font-size: 7.6rem;
   fill: #fff;
   font-weight: 300;
   letter-spacing: 2px; }
 
 .indexSvgTextAbout {
   font-family: Oswald, sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   fill: #fff;
   font-weight: 300;
   letter-spacing: 5px; }
@@ -813,22 +813,25 @@ footer {
 
 .view-project {
   margin-top: 30px;
-  background: #ffad00;
-  padding: 5px 10px;
-  border: 0;
-  position: relative;
-  left: 5px;
+  background: #fff;
+  border: 1px solid #015563;
+  border-radius: 5px;
+  padding: 12px 10px;
   clear: both;
-  display: block; }
+  display: block;
+  transition: all ease-in .5s; }
   .view-project a {
-    color: #fff;
+    color: #015563;
     font-weight: bold;
     font-size: 1.5rem;
     text-transform: uppercase;
     text-decoration: none; }
 
 .view-project:hover {
-  box-shadow: 0px 1px 12px 2px rgba(232, 158, 10, 0.75); }
+  background: #ffad00;
+  border-color: #ffad00; }
+  .view-project:hover a {
+    color: #fff; }
 
 .tech {
   font-size: 2.1rem; }
